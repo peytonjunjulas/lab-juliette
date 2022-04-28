@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab-Juliette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <div class = "header"> 
+    <h1> Pick your state..... Fixed! </h1>
+  </div>
+  <br>
+
+
+    <div class = "card">
+      <div class = "card-header">
+        <h5> The Problem </h5>
+      </div>
+      <div class = "card-body">
+        <p> On online forms when you are to select your state it often looks like this: </p>
+        <br>
+        <label for = "states" class = "form-label"> Select your state: </label>
+        <select id = "states" name = "states" class = "form-select" type = "select">
+          <option value = "" disabled selected> Select your state </option>
+          <option value = "AL"> AL </option>
+          <option value = "AK"> AK </option>
+          <option value = "AZ"> AZ </option>
+          <option value = "AR"> AR </option>
+          <option value = "CA"> CA </option>
+          <option value = "CO"> CO </option>
+          <option value = "CT"> CT </option>
+          <option value = "DE"> DE </option>
+          <option value = "FL"> FL </option>
+          <option value = "GA"> GA </option>
+          <option value = "HI"> HI </option>
+          <option value = "ID"> ID </option>
+          <option value = "IL"> IL </option>
+          <option value = "IN"> IN </option>
+          <option value = "IA"> IA </option>
+          <option value = "KS"> KS </option>
+          <option value = "KY"> KY </option>
+          <option value = "LA"> LA </option>
+          <option value = "ME"> ME </option>
+          <option value = "MD"> MD </option>
+          <option value = "MA"> MA </option>
+          <option value = "MI"> MI </option>
+          <option value = "MN"> MN </option>
+          <option value = "MS"> MS </option>
+          <option value = "MO"> MO </option>
+          <option value = "MT"> MT </option>
+          <option value = "NE"> NE </option>
+          <option value = "NV"> NV </option>
+          <option value = "NH"> NH </option>
+          <option value = "NJ"> NJ </option>
+          <option value = "NM"> NM </option>
+          <option value = "NY"> NY </option>
+          <option value = "NC"> NC </option>
+          <option value = "ND"> ND </option>
+          <option value = "OH"> OH </option>
+          <option value = "OK"> OK </option>
+          <option value = "OR"> OR </option>
+          <option value = "PA"> PA </option>
+          <option value = "RI"> RI </option>
+          <option value = "SC"> SC </option>
+          <option value = "SD"> SD </option>
+          <option value = "TN"> TN </option>
+          <option value = "TX"> TX </option>
+          <option value = "UT"> UT </option>
+          <option value = "VT"> VT </option>
+          <option value = "VA"> VA </option>
+          <option value = "WA"> WA </option>
+          <option value = "WV"> WV </option>
+          <option value = "WI"> WI </option>
+          <option value = "WY"> WY </option>
+        </select>
+        <hr>
+        <p> For some, such as us in Alabama this is not an issue </p>
+        <br>
+        <p> but for those in states at the bottom or awkwardly in the middle it can be annoying to find </p>
+        <br>
+        <p> Thus......</p>
+      </div>
+      <div class = "card-footer">
+        <p></p>
+      </div>
+    </div>
+
+    <br> 
+
+    <div class = "card">
+      <div class = "card-header">
+        <h5> The Solution </h5>
+      </div>
+      <div class = "card-body">
+        <label for = "improvedState"> Select your state: </label>
+        <input type = "text" placeholder = "state" id = "improvedState" name = "improvedState">
+        <button  id = "selectStateButton" class = "btn btn-secondary"> Select </button>
+        <br>
+        <div class = "grid-state-container" id = "stateSelect">
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "alabama"> AL </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "alaska"> AK </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "arizona"> AZ </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "arkansas"> AR </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "california"> CA </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "colorado"> CO </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "connecticut"> CT </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "delaware"> DE </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "florida"> FL </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "georgia"> GA </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "hawaii"> HI </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "idaho"> ID </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "illinois"> IL </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "indiana"> IN </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "iowa"> IA </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "kansas"> KS </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "kentucky"> KY </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "louisiana"> LA </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "maine"> ME </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "maryland"> MD </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "massachusetts"> MA </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "michigan"> MI </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "minnesota"> MN </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "mississippi"> MS </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "missouri"> MO </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "montana"> MT </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "nebraska"> NE </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "nevada"> NV </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "newHampshire"> NH </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "newJersey"> NJ </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "newMexico"> NM </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "newYork"> NY </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "northCarolina"> NC </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "northDakota"> ND </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "ohio"> OH </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "oklahoma"> OK </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "oregon"> OR </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "pennsylvania"> PA </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "rhodeIsland"> RI </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "southCarolina"> SC </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "southDakota"> SD </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "tennessee"> TN </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "texas"> TX </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "utah"> UT </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "vermont"> VT </button> </div>
+
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "virginia"> VA </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "washington"> WA </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "westVirginia"> WV </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "wisconsin"> WI </button> </div>
+          <div class = "grid-state-item"> <button type = "button" class = "btn btn-primary" id = "wyoming"> WY </button> </div>
+        </div>
+        <hr>
+        <p> With this option, after hitting the select button all the states are displayed.  </p>
+        <br>
+        <p> This makes it easier to select as all the options are available to view.</p>
+        </div>
+
+        <div class = "card-footer">
+          <p> </p>
+        </div>
+      </div>
+
+    </div>
+
+  <br>
+
+   <div class = "footer">
+    <h5> <a href = "https://github.com/peytonjunjulas/lab-juliette" target = "blank_" > Repo  </a> <span> || </span> <a href = "" target = "blank_"> Validation </a> </h5>
+  </div> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
