@@ -1,11 +1,12 @@
-
+//hides beginning state div 
 $("#stateSelect").hide();
 
-
+//button that shows states to select 
 $("#selectStateButton").click(function(){
   $("#stateSelect").show();
 });
 
+//all the following buttons selecct the desired state as well as hide the state select div 
 $("#alabama").click(function(){
   $("#improvedState").val("AL");
   $("#stateSelect").hide();
